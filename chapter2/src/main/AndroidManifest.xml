@@ -14,22 +14,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".The2_5_ActivityLifeCycle_Activity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".The2_5_ActivityLifeCycle_Activity"></activity>
         <activity android:name=".The2_4_Intent_Brower_Activity"></activity>
         <activity android:name=".The2_4_Intent_Implict_Activity" />
         <activity android:name=".The2_4_Intent_SecondActivity">
             <intent-filter>
                 <action android:name="cn.cssf.myteach.INTENT" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".The2_4_Intent_Activity" />
+        <activity android:name=".The2_4_Intent_Activity" >
+
+        </activity>
         <activity android:name=".The2_3_Activity" />
     </application>
 
