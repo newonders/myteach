@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".The3_1_RelativeLayout_Activity"></activity>
-        <activity android:name=".The3_1_ConstraintLayout_Activity" />
+        <activity android:name=".The3_3_RecyclerView_Activity"></activity>
+        <activity android:name=".The3_4_Task1_Activity" />
+        <activity android:name=".The3_3_ListView_Activity" />
+        <activity android:name=".The3_1_RelativeLayout_Activity" />
+        <activity android:name=".The3_2_ConstraintLayout_Activity" />
         <activity android:name=".The3_1_LinearLayout_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>

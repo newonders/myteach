@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         button1.setText("LinearLayout");
         button2.setText("RelativeLayout");
         button3.setText("ConstraintLayout");
+        button4.setText("ListView");
+        button5.setText("RecyclerView");
+        button6.setText("Task1");
         button1.setOnClickListener(listener);
         button2.setOnClickListener(listener);
         button3.setOnClickListener(listener);
@@ -55,15 +58,19 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(context, The3_1_LinearLayout_Activity.class);
                     break;
                 case R.id.button2:
+                    intent = new Intent(context, The3_1_RelativeLayout_Activity.class);
                     break;
                 case R.id.button3:
-                    intent = new Intent(context, The3_1_ConstraintLayout_Activity.class);
+                    intent = new Intent(context, The3_2_ConstraintLayout_Activity.class);
                     break;
                 case R.id.button4:
+                    intent = new Intent(context, The3_3_ListView_Activity.class);
                     break;
                 case R.id.button5:
+                    intent = new Intent(context, The3_3_RecyclerView_Activity.class);
                     break;
                 case R.id.button6:
+                    intent = new Intent(context, The3_4_Task1_Activity.class);
                     break;
                 case R.id.button7:
                     break;

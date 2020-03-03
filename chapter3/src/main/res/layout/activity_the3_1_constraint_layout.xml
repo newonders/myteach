@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".The3_1_ConstraintLayout_Activity">
+    tools:context=".The3_2_ConstraintLayout_Activity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -189,7 +189,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline8"
-        app:srcCompat="@drawable/xjlp36" />
+        app:srcCompat="@drawable/f01" />
 
     <SeekBar
         android:id="@+id/seekBar"

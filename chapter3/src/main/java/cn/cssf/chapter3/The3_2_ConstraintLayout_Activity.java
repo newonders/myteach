@@ -18,7 +18,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class The3_1_ConstraintLayout_Activity extends AppCompatActivity {
+public class The3_2_ConstraintLayout_Activity extends AppCompatActivity {
 
     TextView displayTv;
     Button buttonLeft, buttonRight, buttonConfirm;
@@ -85,8 +85,8 @@ public class The3_1_ConstraintLayout_Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.radioButton2)
-                    imageView.setImageResource(R.drawable.xjlp36);
-                else imageView.setImageResource(R.drawable.xjlp37);
+                    imageView.setImageResource(R.drawable.f01);
+                else imageView.setImageResource(R.drawable.f03);
             }
         });
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
