@@ -7,37 +7,40 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
-public class AdapterDataSource {
+public class DataSource {
 
     static Context context;
-    static AdapterDataSource dataSource;
+    static DataSource dataSource;
 
-    public static AdapterDataSource getDataSource(Context context){
+    public static DataSource getDataSource(Context context){
         if (dataSource == null){
-            dataSource = new AdapterDataSource(context);
+            dataSource = new DataSource(context);
         }
         return dataSource;
     }
 
-    private AdapterDataSource(Context context){
+    private DataSource(Context context){
         this.context = context;
     }
 
     public List<Person> getPersonList(){
         List<Person> dataList = new ArrayList<>();
         List<String> cityList = getCityList();
+        List<String> companyList = getCompanyList();
         List<Integer> imageResouces = getImageResouceId();
-        Random randomImages = new Random(); //共有24张图片，随机选取
+        Random random = new Random(); //共有24张图片，随机选取
         String famousStr = context.getString(R.string.famous);
         String[] names = famousStr.split(" ");
         for (String name : names){
             Person person = new Person();
-            int index = randomImages.nextInt(24);
+            int index = random.nextInt(24);
             person.setImageId(imageResouces.get(index));//random得到[0,23]取值
             person.setName(name);
-            person.setCity(cityList.get(randomImages.nextInt(cityList.size())));
+            person.setCity(cityList.get(random.nextInt(cityList.size())));
+            person.setCompany(companyList.get(random.nextInt(companyList.size())));
             person.setPhone(getRandomNumber());
             dataList.add(person);
         }
@@ -73,6 +76,11 @@ public class AdapterDataSource {
 
     private List<String> getCityList(){
         String[] cityArray = context.getString(R.string.city).split(" ");
+        return Arrays.asList(cityArray);
+    }
+
+    private List<String> getCompanyList(){
+        String[] cityArray = context.getString(R.string.company).split(" ");
         return Arrays.asList(cityArray);
     }
 }

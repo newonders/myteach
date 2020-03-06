@@ -12,4 +12,8 @@
         伊斯坦布尔 曼谷 墨尔本 阿姆斯特丹 斯德哥尔摩 旧金山 新德里 圣地亚哥 约翰内斯堡
         都柏林 维也纳 蒙特利尔 里斯本 巴塞罗那 卢森堡市 圣菲波哥大 马尼拉 华盛顿
         布拉格 慕尼黑 罗马 利雅得 布达佩斯 休斯顿 深圳</string>
+    <string name="company">迪斯尼 传奇影业 华纳兄弟 派拉蒙 环球影业</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

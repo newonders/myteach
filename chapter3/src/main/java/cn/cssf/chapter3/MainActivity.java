@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         button4.setText("ListView");
         button5.setText("RecyclerView");
         button6.setText("Task1");
+        button7.setText("Fragment静态创建");
+        button8.setText("Fragment动态创建");
         button1.setOnClickListener(listener);
         button2.setOnClickListener(listener);
         button3.setOnClickListener(listener);
@@ -73,8 +75,10 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(context, The3_4_Task1_Activity.class);
                     break;
                 case R.id.button7:
+                    intent = new Intent(context, The3_5_Fragment_xml_Activity.class);
                     break;
                 case R.id.button8:
+                    intent = new Intent(context, The3_5_Fragment_load_Activity.class);
                     break;
                 case R.id.button9:
                     break;

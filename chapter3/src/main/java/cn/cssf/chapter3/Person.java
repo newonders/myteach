@@ -5,6 +5,7 @@ public class Person {
     private String city;
     private String phone;
     private int imageId;
+    private String company;
 
     public String getName() {
         return name;
@@ -38,13 +39,11 @@ public class Person {
         this.imageId = imageId;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", gender='" + city + '\'' +
-                ", phone='" + phone + '\'' +
-                ", imageId='" + imageId + '\'' +
-                '}';
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 }
