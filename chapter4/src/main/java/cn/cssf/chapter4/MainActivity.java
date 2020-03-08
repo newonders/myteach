@@ -1,12 +1,12 @@
-package cn.cssf.myteach;
+package cn.cssf.chapter4;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,22 +15,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button1 = findViewById(R.id.button1),
-               button2 = findViewById(R.id.button2),
-               button3 = findViewById(R.id.button3),
-               button4 = findViewById(R.id.button4),
-               button5 = findViewById(R.id.button5),
-               button6 = findViewById(R.id.button6),
-               button7 = findViewById(R.id.button7),
-               button8 = findViewById(R.id.button8),
-               button9 = findViewById(R.id.button9),
-               button10 = findViewById(R.id.button10);
+                button2 = findViewById(R.id.button2),
+                button3 = findViewById(R.id.button3),
+                button4 = findViewById(R.id.button4),
+                button5 = findViewById(R.id.button5),
+                button6 = findViewById(R.id.button6),
+                button7 = findViewById(R.id.button7),
+                button8 = findViewById(R.id.button8),
+                button9 = findViewById(R.id.button9),
+                button10 = findViewById(R.id.button10);
         MyOnClickListener listener = new MyOnClickListener(MainActivity.this);
-        button1.setText("Activity");
-        button2.setText("Intent");
-        button3.setText("Intent_Second");
-        button4.setText("Intent_Implict");
-        button5.setText("Intent_Brower");
-        button6.setText("ActivtiyLifeCycle");
+        button1.setText("登录上线标准/有序/本地广播");
+        button2.setText("带权限广播");
         button1.setOnClickListener(listener);
         button2.setOnClickListener(listener);
         button3.setOnClickListener(listener);
@@ -55,22 +51,18 @@ public class MainActivity extends AppCompatActivity {
             int id = view.getId();
             switch (id){
                 case R.id.button1:
-                    intent = new Intent(context, The2_3_Activity.class);
+                    intent = new Intent(context, The4_2_Login_BC_Activity.class);
                     break;
                 case R.id.button2:
-                    intent = new Intent(context, The2_4_Intent_Activity.class);
+                    intent = new Intent(context, The4_3_Permission_BC_Activity.class);
                     break;
                 case R.id.button3:
-                    intent = new Intent(context, The2_4_Intent_SecondActivity.class);
                     break;
                 case R.id.button4:
-                    intent = new Intent(context, The2_4_Intent_Implict_Activity.class);
                     break;
                 case R.id.button5:
-                    intent = new Intent(context, The2_4_Intent_Brower_Activity.class);
                     break;
                 case R.id.button6:
-                    intent = new Intent(context, The2_5_ActivityLifeCycle_Activity.class);
                     break;
                 case R.id.button7:
                     break;
@@ -81,9 +73,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.button10:
                     break;
             }
-            if (null != intent)
+            if (intent != null)
                 startActivity(intent);
         }
     }
-
 }

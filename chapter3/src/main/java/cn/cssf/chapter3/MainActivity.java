@@ -85,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.button10:
                     break;
             }
-            startActivity(intent);
+            if (null != intent)
+                startActivity(intent);
         }
     }
 
