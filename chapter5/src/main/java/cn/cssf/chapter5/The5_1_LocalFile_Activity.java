@@ -19,7 +19,7 @@ public class The5_1_LocalFile_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_the5_1_localfile);
+        setContentView(R.layout.activity_the5_3__sqlite);
 
         Button button = findViewById(R.id.button);
 
